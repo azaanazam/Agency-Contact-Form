@@ -21,7 +21,7 @@ export async function POST(request) {
             from: `"${name}" <${process.env.EMAIL_USER}>`,
             to: process.env.RECEIVER_EMAIL,
             replyTo: email,
-            subject: `🚀 New Agency Lead from ${name}`,
+            subject: ` New Agency Lead from ${name}`,
             html: `
                 <div style="font-family: sans-serif; padding: 20px; background-color: #0f172a; color: #fff;">
                     <div style="max-width: 600px; margin: 0 auto; background: #1e293b; padding: 30px; border-radius: 12px; border: 1px solid #334155;">

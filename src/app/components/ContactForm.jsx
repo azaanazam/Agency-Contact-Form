@@ -19,13 +19,13 @@ export default function ContactForm() {
             
             const data = await res.json();
             if (res.ok) {
-                setStatus({ loading: false, msg: '✨ Message sent successfully!', success: true });
+                setStatus({ loading: false, msg: ' Message sent successfully!', success: true });
                 setFormData({ name: '', email: '', phone: '', message: '' });
             } else {
                 throw new Error(data.message || 'Something went wrong');
             }
         } catch (err) {
-            setStatus({ loading: false, msg: `❌ ${err.message}`, success: false });
+            setStatus({ loading: false, msg: ` ${err.message}`, success: false });
         }
     };
 
